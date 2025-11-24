@@ -34,14 +34,15 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details. -->
-# 🛒 MyShop — Next.js E-commerce Demo
+
+# 🛒 SweetsSlice — Next.js E-commerce Demo
 
 A fully functional demo app built with **Next.js App Router**, **NextAuth.js**, and **DaisyUI**.
 
 ✅ Public & protected pages  
 ✅ Google login  
 ✅ API routes for products  
-✅ Responsive design  
+✅ Responsive design
 
 ---
 
@@ -49,6 +50,7 @@ A fully functional demo app built with **Next.js App Router**, **NextAuth.js**, 
 
 1. Clone and install:
    ```bash
-   git clone https://github.com/your-username/my-nextjs-app.git
+   git clone https://github.com/KhMansura/sweets-slice.git
    cd my-nextjs-app
    npm install
+   ```

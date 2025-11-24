@@ -84,14 +84,14 @@ export default function Navbar() {
             ) : session ? (
               <div className="dropdown dropdown-end">
                 <label tabIndex={0} className="btn btn-ghost">
-                  {session.user?.name || 'Account'}
+                  {session.user?.name?.split('')[0] || 'Account'}
                 </label>
                 <ul
                   tabIndex={0}
                   className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52 mt-2"
                 >
-                  <li><Link href="/add-product">Add Product</Link></li>
-                  <li><Link href="/manage-products">Manage Products</Link></li>
+                  <li><Link href="/add-product">➕Add Product</Link></li>
+                  <li><Link href="/manage-products">🛠️Manage Products</Link></li>
                   <li><button onClick={() => signOut()} className="text-error">Logout</button></li>
                 </ul>
               </div>

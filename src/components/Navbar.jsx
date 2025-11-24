@@ -84,7 +84,7 @@ export default function Navbar() {
             ) : session ? (
               <div className="dropdown dropdown-end">
                 <label tabIndex={0} className="btn btn-ghost">
-                  {session.user?.name?.split('')[0] || 'Account'}
+                  {session.user?.name?.split(' ')[0] || 'Account'}
                 </label>
                 <ul
                   tabIndex={0}
@@ -92,7 +92,7 @@ export default function Navbar() {
                 >
                   <li><Link href="/add-product">➕Add Product</Link></li>
                   <li><Link href="/manage-products">🛠️Manage Products</Link></li>
-                  <li><button onClick={() => signOut()} className="text-error">Logout</button></li>
+                  <li><button onClick={() => signOut()} className="text-error">🚪Logout</button></li>
                 </ul>
               </div>
             ) : (
@@ -125,12 +125,21 @@ export default function Navbar() {
               <>
                 <Link href="/add-product" className="block px-4 py-2 hover:bg-base-200 rounded" onClick={() => setIsMenuOpen(false)}>Add Product</Link>
                 <Link href="/manage-products" className="block px-4 py-2 hover:bg-base-200 rounded" onClick={() => setIsMenuOpen(false)}>Manage Products</Link>
-                <button
+                {/* <button
                   onClick={() => { signOut(); setIsMenuOpen(false); }}
                   className="block px-4 py-2 text-error hover:bg-base-200 rounded"
                 >
                   Logout
-                </button>
+                </button> */}
+                <button
+  onClick={() => {
+    signOut({ redirect: true, callbackUrl: '/' });
+    setIsMenuOpen(false);
+  }}
+  className="block px-4 py-2 text-error hover:bg-base-200 rounded"
+>
+  Logout
+</button>
               </>
             ) : (
               <>

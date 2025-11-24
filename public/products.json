@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "title": "Classic Chocolate Cake",
+    "shortDesc": "Rich, moist chocolate cake with creamy ganache frosting.",
+    "fullDesc": "Our signature chocolate cake made with premium cocoa, layered with silky chocolate ganache. Perfect for birthdays and celebrations. Contains eggs, dairy, and gluten.",
+    "price": "৳1,200",
+    "category": "Cakes",
+    "image": "https://i.ibb.co/B5QDHQJz/download-10.jpg",
+    "dateAdded": "2025-11-01"
+  },
+  {
+    "id": 2,
+    "title": "Strawberry Shortcake",
+    "shortDesc": "Light vanilla sponge layered with fresh strawberries and cream.",
+    "fullDesc": "Fluffy vanilla sponge cake filled with whipped cream and ripe Bangladeshi strawberries. Topped with strawberry glaze and mint. Best served chilled.",
+    "price": "৳950",
+    "category": "Cakes",
+    "image": "https://i.ibb.co.com/Df6NHPRM/images.jpg",
+    "dateAdded": "2025-11-03"
+  },
+  {
+    "id": 3,
+    "title": "Red Velvet Cupcakes (6 pcs)",
+    "shortDesc": "Velvety red cupcakes with cream cheese frosting.",
+    "fullDesc": "Soft red velvet cupcakes topped with tangy cream cheese frosting and decorated with edible rose petals. Sold in packs of 6.",
+    "price": "৳750",
+    "category": "Cupcakes",
+    "image": "https://i.ibb.co.com/Dh04KxY/download.jpg",
+    "dateAdded": "2025-11-05"
+  },
+  {
+    "id": 4,
+    "title": "Mango Mousse Cake",
+    "shortDesc": "Light mango mousse layered over sponge, topped with fresh mango.",
+    "fullDesc": "Summer special! Smooth mango mousse with hints of cardamom, layered over vanilla sponge. Topped with fresh mango cubes and pistachios. No artificial flavors.",
+    "price": "৳1,400",
+    "category": "Cakes",
+    "image": "https://i.ibb.co.com/FkN2CGXq/images.jpg",
+    "dateAdded": "2025-11-10"
+  },
+  {
+    "id": 5,
+    "title": "Black Forest Gateau",
+    "shortDesc": "Chocolate sponge with cherries, whipped cream, and chocolate shavings.",
+    "fullDesc": "Authentic Black Forest cake with layers of chocolate sponge, cherry compote, and whipped cream. Finished with dark chocolate curls.",
+    "price": "৳1,300",
+    "category": "Cakes",
+    "image": "https://i.ibb.co.com/355fFY2w/download.jpg",
+    "dateAdded": "2025-11-12"
+  },
+  {
+    "id": 6,
+    "title": "Cheesecake Bites (12 pcs)",
+    "shortDesc": "Mini New York-style cheesecakes with berry compote.",
+    "fullDesc": "Creamy baked cheesecake bites on a buttery crust, drizzled with mixed berry compote. Pack of 12 — ideal for parties!",
+    "price": "৳800",
+    "category": "Bites",
+    "image": "https://i.ibb.co.com/twTfvsf5/images.jpg",
+    "dateAdded": "2025-11-15"
+  },
+  {
+    "id": 7,
+    "title": "Rasmalai Cake",
+    "shortDesc": "Fusion cake with rasmalai filling and saffron cream.",
+    "fullDesc": "Bangladeshi twist on cake! Vanilla sponge filled with soft rasmalai pieces, soaked in sweetened milk, and topped with saffron-infused cream and pistachios.",
+    "price": "৳1,500",
+    "category": "Specialty",
+    "image": "https://i.ibb.co.com/B54836Zx/images.jpg",
+    "dateAdded": "2025-11-18"
+  },
+{
+  "id": 8,
+  "title": " Glazed Donuts (6 pcs)",
+  "shortDesc": "Soft yeast donuts dipped in warm chocolate glaze with pistachio dust.",
+  "fullDesc": "A sweet homage to Bengal! Fluffy yeast-raised donuts hand-dipped in warm chocolate glaze, finished with a sprinkle of crushed pistachios and edible rose petals. Slightly caramelized edges, melt-in-mouth texture. Best served fresh — perfect with cha or milk. Pack of 6.",
+  "price": "৳550",
+  "category": "Donuts",
+  "image": "https://i.ibb.co.com/jPhJmwF9/download.jpg",
+  "dateAdded": "2025-11-20"
+},
+{
+  "id": 9,
+  "title": "Mango & Malai Tart (4 pcs)",
+  "shortDesc": "Buttery tart shells filled with mango curd and whipped malai.",
+  "fullDesc": "Summer special! Crisp shortcrust tarts filled with tangy Himsagar mango curd and topped with light whipped malai (fresh cream). Garnished with mango slices and mint. Pack of 4 — great for gifting!",
+  "price": "৳650",
+  "category": "Tarts",
+  "image": "https://i.ibb.co.com/4wtYfzZR/images.jpg",
+  "dateAdded": "2025-11-22"
+},
+{
+  "id": 10,
+  "title": "Choco-Peanut Brownie Box",
+  "shortDesc": "Fudgy brownies with peanut butter swirl and chocolate chunks.",
+  "fullDesc": "Rich, fudgy brownies made with dark chocolate and local peanut butter, swirled with caramel and studded with roasted peanuts. Sold in a gift box of 8. Best enjoyed with tea or coffee. Contains nuts.",
+  "price": "৳550",
+  "category": "Bites",
+  "image": "https://i.ibb.co.com/3mv5Mb1s/images.jpg",
+  "dateAdded": "2025-11-24"
+}
+]

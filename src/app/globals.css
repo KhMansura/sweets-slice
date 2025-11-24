@@ -24,3 +24,37 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html, body, #__next { height: 100%; }
+body { @apply bg-gradient-to-r from-purple-100 to-indigo-50 text-gray-700; }
+
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-base-100 text-base-content;
+}
+
+a {
+  @apply no-underline hover:underline;
+}
+
+.btn {
+  @apply transition-all duration-300;
+}
+
+.card {
+  @apply shadow-lg hover:shadow-xl transition-shadow;
+}
+
+/* Responsive spacing */
+/* @media (max-width: 768px) {
+  .container {
+    @apply px-4;
+  }
+} */ 

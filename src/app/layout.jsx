@@ -56,17 +56,19 @@
 //     </html>
 //   );
 // }
-// ✅ src/app/layout.jsx — SERVER COMPONENT (NO 'use client')
+//  src/app/layout.jsx — SERVER COMPONENT (NO 'use client')
 
 import Footer from '@/components/Footer';
 import './globals.css';
 import Navbar from '@/components/Navbar';
 import SessionWrapper from '@/components/SessionWrapper'; // 👈 Import wrapper
+import { Toaster } from 'react-hot-toast';
 
 export const metadata = {
   title: 'SweetSlice',
   description: 'Simple e-commerce demo with Next.js & DaisyUI',
 };
+
 
 export default function RootLayout({ children }) {
   return (
@@ -77,6 +79,13 @@ export default function RootLayout({ children }) {
           <Navbar />
           <main className="min-h-[calc(100vh-200px)]">{children}</main>
           <Footer />
+           <Toaster 
+            position="top-center"
+            toastOptions={{
+              success: { duration: 3000 },
+              error: { duration: 5000 },
+            }}
+          />
         </SessionWrapper>
       </body>
     </html>

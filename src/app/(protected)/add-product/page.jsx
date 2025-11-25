@@ -286,6 +286,7 @@ import { useSession } from 'next-auth/react';
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 import Link from 'next/link';
+import toast from 'react-hot-toast';
 
 export default function AddProductPage() {
   const { data: session, status } = useSession();
@@ -310,6 +311,7 @@ export default function AddProductPage() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    const loadingToast = toast.loading('Adding product...');
     setLoading(true);
     setMessage('');
 
@@ -330,19 +332,30 @@ export default function AddProductPage() {
         }),
       });
 
-      if (res.ok) {
+    //   if (res.ok) {
+    //     const product = await res.json();
+    //     setMessage(`✅ Product "${product.title}" added successfully!`);
+    //     setFormData({ title: '', shortDesc: '', fullDesc: '', price: '', image: '' });
+    //     setTimeout(() => router.push('/products'), 2000);
+    //   } else {
+    //     const error = await res.json();
+    //     setMessage(`❌ ${error.error || 'Failed to add product'}`);
+    //   }
+    // } catch (err) {
+    //   setMessage('❌ Network error. Please try again.');
+    // } finally {
+    //   setLoading(false);
+     if (res.ok) {
         const product = await res.json();
-        setMessage(`✅ Product "${product.title}" added successfully!`);
+        toast.success(`✅ "${product.title}" added!`, { id: loadingToast });
         setFormData({ title: '', shortDesc: '', fullDesc: '', price: '', image: '' });
-        setTimeout(() => router.push('/products'), 2000);
+        setTimeout(() => router.push('/products'), 1500);
       } else {
         const error = await res.json();
-        setMessage(`❌ ${error.error || 'Failed to add product'}`);
+        toast.error(`❌ ${error.error || 'Failed to add product'}`, { id: loadingToast });
       }
     } catch (err) {
-      setMessage('❌ Network error. Please try again.');
-    } finally {
-      setLoading(false);
+      toast.error('⚠️ Network error. Please try again.', { id: loadingToast });
     }
   };
 

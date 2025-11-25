@@ -164,6 +164,7 @@ import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import ProductImage from "@/components/ProductImage";
 
 export default function ManageProductsPage() {
   // ✅ HOOKS FIRST — Always call hooks at the top level
@@ -332,7 +333,7 @@ export default function ManageProductsPage() {
                       <div className="flex items-center gap-3">
                         <div className="avatar">
                           <div className="mask mask-squircle w-12 h-12">
-                            <img
+                            {/* <img
                               src={
                                 (product.image?.trim() || "").startsWith("http")
                                   ? product.image.trim()
@@ -344,7 +345,12 @@ export default function ManageProductsPage() {
                                   "https://via.placeholder.com/100x100?text=Error";
                               }}
                               className="object-cover"
-                            />
+                            /> */}
+                            <ProductImage 
+  src={product.image} 
+  alt={product.title}
+  className="w-full h-full"
+/>
                           </div>
                         </div>
                         <div>

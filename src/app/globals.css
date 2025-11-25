@@ -32,29 +32,21 @@ body {
 html, body, #__next { height: 100%; }
 body { @apply bg-gradient-to-r from-purple-100 to-indigo-50 text-gray-700; }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 /* @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* DaisyUI handles dark/light via data-theme — no extra CSS needed */
+/* html {
+  scroll-behavior: smooth;
+}
+
 body {
-  @apply bg-base-100 text-base-content;
-}
-
-a {
-  @apply no-underline hover:underline;
-}
-
-.btn {
-  @apply transition-all duration-300;
-}
-
-.card {
-  @apply shadow-lg hover:shadow-xl transition-shadow;
-}
-
-/* Responsive spacing */
-/* @media (max-width: 768px) {
-  .container {
-    @apply px-4;
-  }
-} */ 
+  /* Optional: fallback background if theme fails */
+  /* @apply bg-base-100 text-base-content; */
+/* } */ 

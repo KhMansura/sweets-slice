@@ -21,16 +21,19 @@ A polished demo e‑commerce app showcasing public and protected pages, authenti
 - Tailwind CSS + DaisyUI
 
 ### Landing Page
-![Landing Page Screenshot](public/screenshots/landing.png)
+![Landing Page Screenshot](../sweets-slice/client/public/Home.png)
 
 ### Products Grid
-![Products Grid Screenshot](public/screenshots/products.png)
+![Products Grid Screenshot](../sweets-slice/client//public/products-grid.png)
+
+### Products Details
+![Products Details Screenshot](../sweets-slice/client//public/product-details.png)
 
 ### Add Product (Protected)
-![Add Product Screenshot](public/screenshots/add-product.png)
+![Add Product Screenshot](../sweets-slice/client/public/add-product.png)
 
 ### Manage Products (Protected)
-![Manage Products Screenshot](public/screenshots/manage-products.png)
+![Manage Products Screenshot](../sweets-slice/client/public/manage-product.png)
 
 
 

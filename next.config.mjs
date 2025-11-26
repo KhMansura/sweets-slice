@@ -11,6 +11,13 @@ const nextConfig = {
         port: '',
         pathname: '/**', // Allows all paths under this domain
       },
+         {
+        protocol: 'https',
+        hostname: 'via.placeholder.com',
+        port: '',
+        pathname: '/**',
+      },
+
       {
         protocol: 'https',
         hostname: 'picsum.photos', // ✅ For placeholder images

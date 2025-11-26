@@ -28,6 +28,7 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
     "./src/app/globals.css",
   ],
+  // darkMode: 'class', 
   theme: {
     extend: {},
   },

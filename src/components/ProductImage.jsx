@@ -1,38 +1,55 @@
-// import React from 'react'
+// 'use client';
 
-// export default function ProductImage() {
+// import Image from 'next/image';
+
+// export default function ProductImage({ src, alt, className = '' }) {
+//   // Clean URL + fallback
+//   const cleanSrc = (src || '')
+//     .trim()
+//     .replace(/\.co\.com/, '.co') // fix common typo
+//     .replace(/ +$/, ''); // trim trailing space
+
+//   const fallback = 'https://via.placeholder.com/400x300/F5F5DC/000000?text=Image+Unavailable';
+
 //   return (
-//     <div>
-      
-//     </div>
-//   )
+//     <Image
+//       src={cleanSrc || fallback}
+//       alt={alt || 'Product image'}
+//       width={400}
+//       height={300}
+//       className={`rounded-lg object-cover ${className}`}
+//       onError={(e) => {
+//         e.target.onerror = null;
+//         e.target.src = fallback;
+//       }}
+//       loading="lazy"
+//     />
+//   );
 // }
-// src/components/ProductImage.jsx
 'use client';
 
 import Image from 'next/image';
+import { useState } from 'react';
 
 export default function ProductImage({ src, alt, className = '' }) {
-  // Clean URL + fallback
+  // Clean the incoming src
   const cleanSrc = (src || '')
     .trim()
     .replace(/\.co\.com/, '.co') // fix common typo
     .replace(/ +$/, ''); // trim trailing space
 
   const fallback = 'https://via.placeholder.com/400x300/F5F5DC/000000?text=Image+Unavailable';
+  const [imgSrc, setImgSrc] = useState(cleanSrc || fallback);
 
   return (
     <Image
-      src={cleanSrc || fallback}
+      src={imgSrc}
       alt={alt || 'Product image'}
       width={400}
       height={300}
       className={`rounded-lg object-cover ${className}`}
-      onError={(e) => {
-        e.target.onerror = null;
-        e.target.src = fallback;
-      }}
       loading="lazy"
+      onError={() => setImgSrc(fallback)} // ✅ Prevents loop
     />
   );
 }

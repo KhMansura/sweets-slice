@@ -107,7 +107,7 @@
 //       try {
 //         // 👇 This is the fix: await params.id
 //         const id = parseInt(await params.id);
-        
+
 //         const res = await fetch('/products.json');
 //         const data = await res.json();
 //         const found = data.find(p => p.id === id); // Now compares 9 === 9
@@ -245,7 +245,7 @@
 //     const loadProduct = async () => {
 //       try {
 //         const id = parseInt(params.id); // ✅ Now safe — useParams returns plain object
-        
+
 //         const res = await fetch('/products.json');
 //         const data = await res.json();
 //         const found = data.find(p => p.id === id);
@@ -299,7 +299,7 @@
 //               className="w-full h-auto rounded-lg"
 //             /> */}
 //             <ProductImage
-//   src={product.image} 
+//   src={product.image}
 //   alt={product.title}
 //   className="w-full h-full"
 // />
@@ -370,12 +370,12 @@
 //   );
 // }
 // src/app/products/[id]/page.jsx
-'use client';
+"use client";
 
-import { useEffect, useState } from 'react';
-import Link from 'next/link';
-import { useParams } from 'next/navigation';
-import ProductImage from '@/components/ProductImage';
+import { useEffect, useState } from "react";
+import Link from "next/link";
+import { useParams } from "next/navigation";
+import ProductImage from "@/components/ProductImage";
 
 export default function ProductDetailPage() {
   const params = useParams();
@@ -386,17 +386,19 @@ export default function ProductDetailPage() {
     const loadProduct = async () => {
       try {
         const id = parseInt(params.id);
-        const res = await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/products/${id}`);
+        const res = await fetch(
+          `${process.env.NEXT_PUBLIC_API_BASE_URL}/products/${id}`
+        );
 
         if (!res.ok) {
-          throw new Error('Product not found');
+          throw new Error("Product not found");
         }
 
         const product = await res.json(); // ✅ This is a single object
 
         setProduct(product);
       } catch (err) {
-        console.error('Error loading product:', err);
+        console.error("Error loading product:", err);
       } finally {
         setLoading(false);
       }

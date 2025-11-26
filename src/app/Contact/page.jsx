@@ -4,6 +4,14 @@
 import { useState } from 'react';
 import Link from 'next/link';
 
+// import { Metadata } from 'next';
+// import ContactForm from './ContactForm';
+
+// export const metadata = {
+//   title: 'Contact Us • SweetSlice',
+//   description: 'Reach out for custom orders, events, or general inquiries in Dhaka.',
+// };
+
 export default function ContactPage() {
   const [formData, setFormData] = useState({
     name: '',

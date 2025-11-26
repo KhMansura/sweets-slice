@@ -24,6 +24,31 @@ export default function Navbar() {
     localStorage.setItem("theme", newTheme);
     setTheme(newTheme);
   };
+  // export default function Navbar() {
+  // const [theme, setTheme] = useState('light');
+  // const [mounted, setMounted] = useState(false);
+
+  // useEffect(() => {
+  //   const saved = localStorage.getItem('theme') || 'light';
+  //   if (saved === 'dark') {
+  //     document.documentElement.classList.add('dark');
+  //   }
+  //   setTheme(saved);
+  //   setMounted(true);
+  // }, []);
+
+  // const toggleTheme = () => {
+  //   const newTheme = theme === 'light' ? 'dark' : 'light';
+    
+  //   if (newTheme === 'dark') {
+  //     document.documentElement.classList.add('dark');
+  //   } else {
+  //     document.documentElement.classList.remove('dark');
+  //   }
+
+  //   localStorage.setItem('theme', newTheme);
+  //   setTheme(newTheme);
+  // };
 
   if (!mounted) return null;
 
@@ -53,9 +78,7 @@ export default function Navbar() {
             {/* theme toggle */}
             <button
               className="btn btn-ghost btn-circle"
-              onClick={toggleTheme}
-              aria-label="Toggle theme"
-            >
+              onClick={toggleTheme}>
               {theme === "dark" ? "☀️" : "🌙"}
             </button>
 
@@ -100,8 +123,7 @@ export default function Navbar() {
             <button
               className="btn btn-ghost btn-circle"
               onClick={toggleTheme}
-              aria-label="Toggle theme"
-            >
+              aria-label="Toggle theme">
               {theme === "dark" ? "☀️ Light Mode" : "🌙 Dark Mode"}
             </button>
             <button

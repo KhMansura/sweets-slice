@@ -87,6 +87,17 @@ export default function RootLayout({ children }) {
             }}
           />
         </SessionWrapper>
+       
+{/* <div className="bg-gradient-to-r from-purple-100 to-indigo-50 dark:from-gray-900 dark:to-gray-800 min-h-screen">
+  <SessionWrapper>
+    <Navbar />
+    
+    <main className="min-h-[calc(100vh-200px)] text-gray-700 dark:text-gray-200">
+      {children}
+    </main>
+    <Footer />
+  </SessionWrapper>
+</div> */}
       </body>
     </html>
   );

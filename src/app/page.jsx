@@ -156,6 +156,62 @@ export default function Home() {
           </div>
         </div>
       </section>
+      {/* ===== Testimonials Section ===== */}
+<section className="bg-gradient-to-r from-pink-50 to-purple-50 py-16">
+  <div className="container mx-auto px-4 text-center">
+    <h2 className="text-3xl font-bold mb-12 flex items-center justify-center gap-2">
+      💬 <span className="text-pink-600">What Our Customers Say</span>
+    </h2>
+    <div className="grid gap-8 md:grid-cols-2">
+      <blockquote className="card bg-white shadow-lg p-8 rounded-xl hover:shadow-xl transition">
+        <p className="text-lg text-gray-700">“SweetSlice cakes are the best! Soft and moist.”</p>
+        <footer className="mt-6 flex items-center gap-3 text-sm text-gray-500 justify-center">
+          <span className="text-pink-500">👤</span> Jim, Dhaka
+        </footer>
+      </blockquote>
+      <blockquote className="card bg-white shadow-lg p-8 rounded-xl hover:shadow-xl transition">
+        <p className="text-lg text-gray-700">“Fast delivery and amazing taste. Highly recommend!”</p>
+        <footer className="mt-6 flex items-center gap-3 text-sm text-gray-500 justify-center">
+          <span className="text-purple-500">👤</span> Sara, Chittagong
+        </footer>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+{/* ===== How It Works Section ===== */}
+<section className="container mx-auto px-4 py-20">
+  <h2 className="text-3xl font-bold text-center mb-12 flex items-center justify-center gap-2">
+    ⚙️ <span className="text-purple-600">How It Works</span>
+  </h2>
+  <div className="grid gap-8 sm:grid-cols-3 text-center">
+    <div className="p-6 bg-pink-50 rounded-xl shadow hover:shadow-md transition">
+      <div className="text-4xl mb-4">🔎</div>
+      <h3 className="font-semibold text-lg mb-2">Browse</h3>
+      <p className="text-gray-600">Choose from our wide range of desserts.</p>
+    </div>
+    <div className="p-6 bg-purple-50 rounded-xl shadow hover:shadow-md transition">
+      <div className="text-4xl mb-4">🛒</div>
+      <h3 className="font-semibold text-lg mb-2">Order</h3>
+      <p className="text-gray-600">Place your order easily online.</p>
+    </div>
+    <div className="p-6 bg-yellow-50 rounded-xl shadow hover:shadow-md transition">
+      <div className="text-4xl mb-4">🚚</div>
+      <h3 className="font-semibold text-lg mb-2">Delivered</h3>
+      <p className="text-gray-600">Get fresh desserts delivered to your door.</p>
+    </div>
+  </div>
+</section>
+
+{/* ===== Banner CTA Section ===== */}
+<section className="hero min-h-[40vh] bg-gradient-to-r from-pink-500 to-purple-600 text-white flex flex-col items-center justify-center text-center p-12 rounded-xl">
+  <h2 className="text-4xl font-bold mb-6 flex items-center gap-3">
+    🎉 Ready to <span className="text-yellow-200">Taste Happiness?</span>
+  </h2>
+  <Link href="/products" className="btn btn-lg bg-yellow-300 text-black hover:bg-yellow-400 shadow-md">
+    🍰 Order Now
+  </Link>
+</section>
     </div>
   );
 }

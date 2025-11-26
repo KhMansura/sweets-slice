@@ -10,7 +10,7 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: ['http://localhost:3000'], // ← Add Vercel URL later
+  origin: ['https://sweets-slice.vercel.app'], // ← Add Vercel URL later
   credentials: true,
 }));
 app.use(express.json());

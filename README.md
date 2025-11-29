@@ -11,8 +11,8 @@ A polished demo e‑commerce app showcasing public and protected pages, authenti
 - Product list, details, add, and manage flows
 
 ## 🚀 Live demo
-- Frontend: <your-vercel-url>
-- Backend: <your-backend-host-or-local>
+- Frontend: [https://sweets-slice.vercel.app/](https://sweets-slice.vercel.app/)
+<!-- - Backend: <your-backend-host-or-local> -->
 
 ## 📦 Tech stack
 - Next.js (App Router)
@@ -21,19 +21,19 @@ A polished demo e‑commerce app showcasing public and protected pages, authenti
 - Tailwind CSS + DaisyUI
 
 ### Landing Page
-![Landing Page Screenshot](../sweets-slice/client/public/Home.png)
+![Landing Page Screenshot](https://raw.githubusercontent.com/KhMansura/sweets-slice/main/client/public/Home.png)
 
 ### Products Grid
-![Products Grid Screenshot](../sweets-slice/client//public/products-grid.png)
+![Products Grid Screenshot](https://raw.githubusercontent.com/KhMansura/sweets-slice/main/client/public/products-grid.png)
 
 ### Products Details
-![Products Details Screenshot](../sweets-slice/client//public/product-details.png)
+![Products Details Screenshot](https://raw.githubusercontent.com/KhMansura/sweets-slice/main/client/public/product-details.png)
 
 ### Add Product (Protected)
 ![Add Product Screenshot](../sweets-slice/client/public/add-product.png)
 
 ### Manage Products (Protected)
-![Manage Products Screenshot](../sweets-slice/client/public/manage-product.png)
+![Manage Products Screenshot](https://raw.githubusercontent.com/KhMansura/sweets-slice/main/client/public/manage-product.png)
 
 
 
